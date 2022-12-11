@@ -9,7 +9,8 @@ func Solve() {
 	// 	{9, 8, 9},
 	// })
 
-    result := staircase(4)
+	// result := staircase(4)
 
+	result := minimax([]int{7,69,2,221,8974})
 	fmt.Println(result)
 }

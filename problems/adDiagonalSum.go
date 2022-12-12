@@ -1,27 +1,34 @@
 package problems
 
-import (
-	"math"
-)
+import "fmt"
 
 func diagonalSum(arr [][]int32) int32 {
-    aDiagonalSum := 0
-    for i := 0; i < len(arr); i++ {
+    // 00
+    // 11
+    // 22
+    rSum := 0
+    for i := 0; i < len(arr); i ++ {
         for j := 0; j < len(arr[i]); j++ {
             if i == j {
-                aDiagonalSum += int(arr[i][j])
+                rSum += int(arr[i][j])
             }
         }
     }
 
-    bDiagonalSum := 0
-    for i := 0; i < len(arr); i++ {
+    // 02
+    // 11
+    // 20
+    lSum := 0
+    for i := 0; i < len(arr); i ++ {
         for j := 0; j < len(arr[i]); j++ {
             if i + j == len(arr[i]) - 1 {
-                bDiagonalSum += int(arr[i][j])
+                lSum += int(arr[i][j])
             }
         }
     }
 
-    return int32(math.Abs(float64(aDiagonalSum) - float64(bDiagonalSum)))
+    fmt.Println(rSum)
+    fmt.Println(lSum)
+
+    return 0
 }

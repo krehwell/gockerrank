@@ -17,23 +17,27 @@ func timeConversion(timeStr string) string {
 		return "invalid time"
 	}
 
-	isDay := strings.Contains(timeArr[2], "PM")
+	isPM := strings.Contains(timeArr[2], "PM")
+	isAM := !isPM
 
-	hour := timeArr[0]
+	hourStr := timeArr[0]
+	hour, err := strconv.Atoi(hourStr)
+	if err != nil {
+		return "invalid string on hour"
+	}
+
 	min := timeArr[1]
 	second := timeArr[2][0:2]
 
-	if !isDay {
-		return strings.Join([]string{hour, min, second}, ":")
-	} else {
-		parsedHour, err := strconv.Atoi(hour)
+    if isAM {
+        if hour == 12 {
+            hour = 0
+        }
+    } else if isPM {
+        if hour != 12 {
+            hour += 12
+        }
+    }
 
-		if err != nil {
-			return "invalid string"
-		}
-
-		amTo24Format := parsedHour + 12
-
-		return strings.Join([]string{fmt.Sprint(amTo24Format), min, second}, ":")
-	}
+    return strings.Join([]string{fmt.Sprintf("%02d", hour), min, second}, ":")
 }

@@ -15,7 +15,7 @@ func Solve() {
 
     // result := birthdayCandle([]int{4, 4, 1, 3})
 
-    result := timeConversion("07:05:45PM")
+    result := timeConversion("12:00:00AM")
 
 	fmt.Println(result)
 }

@@ -13,7 +13,9 @@ func Solve() {
 
 	// result := minimax([]int{7,69,2,221,8974})
 
-    result := birthdayCandle([]int{4, 4, 1, 3})
+    // result := birthdayCandle([]int{4, 4, 1, 3})
+
+    result := timeConversion("07:05:45PM")
 
 	fmt.Println(result)
 }

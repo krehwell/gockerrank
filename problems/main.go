@@ -17,8 +17,9 @@ func Solve() {
 
     // result := timeConversion("12:00:00AM")
 
+    // result := GradingStudents([]int{73, 67, 38, 33})
 
-    result := GradingStudents([]int{73, 67, 38, 33})
+    result := AppleAndOrange(7, 11, 5, 15, []int32{-2, 2, 1}, []int32{5, -6})
 
 	fmt.Println(result)
 }

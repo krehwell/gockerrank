@@ -21,7 +21,11 @@ func Solve() {
 
 	// result := AppleAndOrange(7, 11, 5, 15, []int32{-2, 2, 1}, []int32{5, -6})
 
-	result := KangoroProblem(0, 2, 5, 3)
+	// result := KangoroProblem(0, 2, 5, 3)
+
+    // result := BetweenTwoSets([]int32{2, 6}, []int32{24, 36})
+    // result := BetweenTwoSets([]int32{2, 4}, []int32{16, 32, 96})
+    result := BetweenTwoSets([]int32{3, 4}, []int32{24, 48})
 
 	fmt.Println(result)
 }

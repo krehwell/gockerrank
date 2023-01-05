@@ -1,6 +1,6 @@
 package problems
 
-func BetweenTwoSets(a, b []int32) int32 {
+func betweenTwoSets(a, b []int32) int32 {
 	var result int32
 	var factors []int32
 

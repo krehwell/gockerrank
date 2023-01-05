@@ -17,15 +17,20 @@ func Solve() {
 
 	// result := timeConversion("12:00:00AM")
 
-	// result := GradingStudents([]int{73, 67, 38, 33})
+	// result := gradingStudents([]int{73, 67, 38, 33})
+	//
+	// result := appleAndOrange(7, 11, 5, 15, []int32{-2, 2, 1}, []int32{5, -6})
+	//
+	// result := kangoroProblem(0, 2, 5, 3)
+	//
+	// result := betweenTwoSets([]int32{2, 6}, []int32{24, 36})
+	// result := betweenTwoSets([]int32{2, 4}, []int32{16, 32, 96})
+	// result := betweenTwoSets([]int32{3, 4}, []int32{24, 48})
 
-	// result := AppleAndOrange(7, 11, 5, 15, []int32{-2, 2, 1}, []int32{5, -6})
+	// result := breakingRecords([]int32{10, 5, 20, 20, 4, 5, 2, 25, 1})
 
-	// result := KangoroProblem(0, 2, 5, 3)
-
-    // result := BetweenTwoSets([]int32{2, 6}, []int32{24, 36})
-    // result := BetweenTwoSets([]int32{2, 4}, []int32{16, 32, 96})
-    result := BetweenTwoSets([]int32{3, 4}, []int32{24, 48})
+    // result := theBirthdayBarProblem([]int32{1, 2, 1, 3, 2}, 3, 2)
+    result := theBirthdayBarProblem([]int32{4}, 4, 1)
 
 	fmt.Println(result)
 }

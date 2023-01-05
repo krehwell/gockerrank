@@ -21,7 +21,7 @@ func countNearHouse(min, max int32, fruits []int32) (count int32) {
 /**
  * https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true
  */
-func AppleAndOrange(s int32, t int32, a int32, b int32, apples []int32, oranges []int32) []int32 {
+func appleAndOrange(s int32, t int32, a int32, b int32, apples []int32, oranges []int32) []int32 {
 	appleDistList := addVector(a, apples)
 	orangeDistList := addVector(b, oranges)
 

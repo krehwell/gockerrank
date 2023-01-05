@@ -2,7 +2,7 @@ package problems
 
 // import "fmt"
 
-func KangoroProblem(x1 int32, v1 int32, x2 int32, v2 int32) string {
+func kangoroProblem(x1 int32, v1 int32, x2 int32, v2 int32) string {
 	var min *int32 = nil
 	var max *int32 = nil
 
